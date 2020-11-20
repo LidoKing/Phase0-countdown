@@ -1,0 +1,17 @@
+{
+  "name": "eth2countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch public/sass:public/css",
+    "dev-express": "sass --watch public/sass:public/css & node server.js"
+  },
+  "author": "Lido King",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.3.0"
+  }
+}

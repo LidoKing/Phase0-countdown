@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ETH 2.0 | Road to Phase 0</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script defer src="dateCountdown.js"></script>
+    <script defer src="depositContract.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <span>road to phase 0</span>
+    </header>
+
+    <section>
+      <div id="countdown">
+        <div class="container1"><span class="count" id="days">NA</span></div>
+        <div class="container1"><span class="count" id="hrs">NA</span></div>
+        <div class="container1"><span class="count" id="mins">NA</span></div>
+        <div class="container1"><span class="count" id="secs">NA</span></div>
+      </div>
+    </section>
+
+    <section id="box1">
+      <div id="amount">
+        staked: <span id="current">...</span> / 524288
+      </div>
+
+      <div id="container2">
+        <div id="bar">
+          <span id="percentage"></span>
+
+          <div id="box">
+              <div id="progress"></div>
+          </div>
+        </div>
+
+        <span id="source">Source: etherscan</span>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+html {
+  font-size: 10px;
+  font-family: "VT323", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+header span {
+  text-transform: uppercase;
+  font-size: 10rem;
+}
+
+#countdown {
+  display: flex;
+  width: 80%;
+  font-size: 10rem;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+#countdown .container {
+  position: relative;
+}
+#countdown .container .count {
+  letter-spacing: 4px;
+}
+#countdown .container .count::before {
+  position: absolute;
+  content: "days";
+  width: 100%;
+  bottom: -15px;
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+#countdown .container #hrs::before {
+  content: "hrs";
+}
+#countdown .container #mins::before {
+  content: "mins";
+}
+#countdown .container #secs::before {
+  content: "secs";
+}
+
+#amount {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+/*# sourceMappingURL=index.css.map */
