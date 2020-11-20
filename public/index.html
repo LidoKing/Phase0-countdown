@@ -10,6 +10,27 @@
     <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
     <script defer src="dateCountdown.js"></script>
     <script defer src="depositContract.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDvj7v81wnPLYmIaqBv7LPxticgfnxHqo4",
+        authDomain: "eth-phase0-countdown.firebaseapp.com",
+        databaseURL: "https://eth-phase0-countdown.firebaseio.com",
+        projectId: "eth-phase0-countdown",
+        storageBucket: "eth-phase0-countdown.appspot.com",
+        messagingSenderId: "923493521590",
+        appId: "1:923493521590:web:66dfcb62d288de9980ee17"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </head>
 
   <body>
