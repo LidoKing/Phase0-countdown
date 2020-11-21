@@ -90,4 +90,12 @@ header span {
   margin-top: 0.2rem;
 }
 
+footer {
+  font-size: 2.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */
