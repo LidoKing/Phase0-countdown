@@ -15,6 +15,7 @@ const contract = new Web3.eth.Contract(ABI, ADDRESS);
 let amount;
 let percentage;
 let target = 524288;
+let percecntageLength;
 
 async function updateAmount() {
   await web3.eth.getBalance('0x00000000219ab540356cBB839Cbe05303d7705Fa', (err, resultInWei) => {
@@ -24,12 +25,18 @@ async function updateAmount() {
       resultInEth = web3.utils.fromWei(resultInWei, 'ether');
       amount = resultInEth;
       percentage = Math.round(amount / target * 100);
+
+      if (percentage < 100) {
+        percentageLength = percentage;
+      } else {
+        percentageLength = 100;
+      }
     }
   });
 
   _amount.innerText = amount;
   _percentage.innerText = percentage + '%';
-  _progress.style.width = `${percentage}%`
+  _progress.style.width = `${percentageLength}%`
 }
 
 updateAmount();
