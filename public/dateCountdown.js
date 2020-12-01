@@ -2,6 +2,9 @@ const days = document.getElementById('days');
 const hrs = document.getElementById('hrs');
 const mins = document.getElementById('mins');
 const secs = document.getElementById('secs');
+const countdown = document.getElementById('countdown');
+const reached = document.getElementById('reached');
+const state = document.getElementById('state');
 
 // Seconds past since January 1, 1970 till deadline
 const deadline = new Date(2020, 11, 1, 0, 0, 0).getTime();
@@ -30,6 +33,12 @@ function update() {
   hrs.innerText = h;
   mins.innerText = m;
   secs.innerText = s;
+
+  if (s < 0) {
+    countdown.style.display = 'none';
+    reached.style.display = 'block';
+    state.innerText = 'target reached!';
+  }
 }
 
 // Call update() every second

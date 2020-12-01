@@ -53,6 +53,14 @@ header span {
   content: "secs";
 }
 
+#reached {
+  display: none;
+  text-align: center;
+}
+#reached #state {
+  font-size: 12rem;
+}
+
 #amount {
   font-size: 5rem;
   text-align: center;
