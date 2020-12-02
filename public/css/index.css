@@ -55,10 +55,14 @@ header span {
 
 #reached {
   display: none;
+  flex-direction: column;
   text-align: center;
 }
 #reached #state {
   font-size: 12rem;
+}
+#reached #redirect {
+  font-size: 3rem;
 }
 
 #amount {
