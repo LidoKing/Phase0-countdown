@@ -6,7 +6,7 @@ const countdown = document.getElementById('countdown');
 const reached = document.getElementById('reached');
 
 // Seconds past since January 1, 1970 till deadline
-const deadline = new Date(2020, 11, 1, 0, 0, 0).getTime();
+const deadline = new Date(2021, 3, 23, 0, 0, 0).getTime();
 
 function update() {
   // Seconds past since January 1, 1970 till now
