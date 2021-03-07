@@ -8,18 +8,18 @@ const reached = document.getElementById('reached');
 // Seconds past since January 1, 1970 till deadline
 const deadline = new Date(2021, 3, 23, 0, 0, 0).getTime();
 
+// Declaring facts (how many seconds for each unit)
+const _second = 1000;
+const _minute = _second * 60;
+const _hour = _minute * 60;
+const _day = _hour * 24;
+
 function update() {
   // Seconds past since January 1, 1970 till now
   const now = new Date().getTime();
 
   // Seconds left till deadline from now
   const gap = deadline - now;
-
-  // Declaring facts (how many seconds for each unit)
-  const _second = 1000;
-  const _minute = _second * 60;
-  const _hour = _minute * 60;
-  const _day = _hour * 24;
 
   // Convert gap back to days, hours, minutes and seconds
   const d = String(Math.floor(gap / _day)).padStart(2, '0');
