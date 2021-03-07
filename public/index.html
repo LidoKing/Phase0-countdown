@@ -9,7 +9,8 @@
     <script src="http://localhost:35729/livereload.js"></script>
     <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
     <script defer src="dateCountdown.js"></script>
-    <script defer src="depositContract.js"></script>
+    <script defer src="percentageBar.js"></script>
+    <script defer src="timer.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
@@ -34,10 +35,6 @@
   </head>
 
   <body>
-    <header>
-      <span>road to DSE</span>
-    </header>
-
     <section>
       <div id="countdown">
         <div class="container1"><span class="count" id="days">NA</span></div>
@@ -47,15 +44,19 @@
       </div>
     </section>
 
-    <section id="box1">
-      <div id="container2">
-        <div id="bar">
-          <span id="percentage"></span>
+    <header>
+      <span>until start of DSE</span>
+    </header>
 
-          <div id="box">
-              <div id="progress"></div>
-          </div>
-        </div>
+    <section>
+      <div id="setter">
+        <span>Input time in minutes: </span>
+        <input type="number" name="" value="" id="set">
+        <button type="button" name="button" onClick="setGoal()" id="initiate">Start</button>
+      </div>
+
+      <div id="timer">
+        <span id="timerHours">00</span>:<span id="timerMins">00</span>:<span id="timerSecs">00</span>
       </div>
     </section>
   </body>
