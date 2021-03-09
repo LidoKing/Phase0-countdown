@@ -26,9 +26,19 @@ function startTimer() {
   timerSecs.innerText = s;
 
   if (s <= 0) {
-    clearInterval(call);
+    clearInterval(control);
     alert('Time is up!!!');
+    gap = 0;
   }
 
   console.log(gap, h, m, s);
+}
+
+function resetFunc() {
+  timerHours.innerText = "00";
+  timerMins.innerText = "00";
+  timerSecs.innerText = "00";
+
+  clearInterval(control);
+  gap = 0;
 }
